@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+   <style> 
+     h1{color: rgb(6, 63, 90);}
+     h2{color: rgb(60, 16, 102);}
+     body {background-image: url(images/fondo_web.png);}
+     .page{ margin:10px 10px 10px 10px;
+            text-align: justify;}
+     .vacuna{color: rgb(230, 30, 186);}
+     .info{background: aqua;
+           overflow: auto;
+           height: 200px;
+           border: 6px solid black;
+           margin: 7px 5px 4px 12px;
+           padding:10px;
+           font-family: monospace;
+           text-align: justify;}
+     #titulo{ background-color: rgb(0, 255, 221);
+              color: white;
+              border: 5px;
+              position:absolute;
+              z-index: 2;}
+     #ia{ position: relative;  
+           z-index:1;
+           left:40px;
+           width: 300px;
+           }    
+     #rob{ position: fixed;
+           bottom: 0;
+           right: 0;
+           height: 100px;
+           border: 3px solid #123d8d;} 
+     #ascenso{width: 250px;
+              float: left;
+              margin-right: 10px;
+              margin-bottom: 10px; }  
+    .sonda{background: rgb(223, 222, 169);
+           font-family: monospace;
+           text-align: justify;
+           width: 70%;}        
+    #pie{background: rgb(199, 155, 155);
+         clear: both;}   
+    .caracter{float: right;
+              width: 20%;
+              margin-left: 10px;} 
+    .flotar{position: absolute;}
+      
+    </style>
+    <title>Diseño en CSS</title>
+</head>
+<div class="page"><body>
+    <h1>Diseño en CSS</h1>
+    <p>
+        Para cambiar el diseño de la página web de utilizan distintas etiquetas.
+    </p>
+    <h2>Etiquetas de selección</h2>
+    <p> <ul>
+        <li>Span</li>
+        <p>Selecciona un elemento que se encuentra en una misma línea, que pertenece a una sola etiqueta. Se usa el tag &lt;span&gt; </p>
+        <li>Div </li>
+        <p>Selecciona los elementos de distintas etiquetas, para ello se utiliza &lt;div&gt;</p>
+        
+    <h2>Overflow</h2>
+    <p>Se utiliza para controlar lo que va a contener la etiqueta &lt;div&gt;. Se puede poner la característica hidden, para ocultar el texto;
+        show, lo muestra fuera del div; y auto, para crear una scrollbar en la que te puedas desplazar en el dvi mostrando todo el contenido. </p>
+    <h2>Box model</h2>
+    <p>Es el "modelo de caja" por el que se organiza a los elementos del HTML incluyendo a cada etiqueta en un bloque o 
+        al conjunto de etiquetas unidas por un div. Dentro de estas cajas se pueden determinar distintas características
+        como las siguientes:
+    
+    <ul><li>Padding</li>
+        <p>Es el "relleno" que se pone al rededor del contenido.En el ejemplo he puesto 10px</p>
+        <li>Border</li>
+        <p>Es el borde que se puede atribuir a modo de marco, encuadra al contenido. Se puede especificar el tipo de línea y el grososr de esta. En el ejemplo he puesto 6px. </p>
+        <li>Margin</li>
+        <p>Son los márgenes que se crean entre las distintas cajas o elementos, se suele dar en px. En el ejemplo he puesto margin: 7px 5px 4px 12px.</p>
+    </ul>
+    <img src="images/box_model.png" height="20%">
+    </p>
+    <p>Todo lo que he explicado anteriormente se muestra en el siguiente ejemplo.</p>
+        <h2>Ejemplo</h2>
+        <p> <div class="info"><h3>Oxford y AstraZeneca afirman que su <span class="vacuna">vacuna</span> puede llegar al 90% de efectividad</h3>
+            <p>Siguen llegando las buenas noticias. De acuerdo a AstraZeneca y a la Universidad de Oxford, su vacuna contra la COVID 19, es altamente efectiva. 
+            Los datos provisionales sugieren una protección del 70%, pero los investigadores dicen que la cifra puede llegar al 90% si se ajusta la dosis.
+            El anuncio llega unos días después que otras farmacéuticas, Pfizer y Moderna, 
+            mostraran resultados igual de alentadores: 90% y 95% respectivamente. Sin embargo, la vacuna de Oxford es más barata, más fácil de almacenar y de llegar a todo el mundo. 
+            Por lo tanto, será una excelente herramienta, si llega a ser aprobado por los reguladores.
+            La conocida vacuna utiliza un enfoque completamente diferente a las de Pfizer y Moderna, 
+            que inyectan parte del código genético del virus en los pacientes. 
+            La vacuna Oxford es un virus del resfriado común modificado genéticamente que se utiliza para infectar a los chimpancés.
+            Los investigadores han modificado el virus para evitar que cause una infección y para llevar los planos de una parte clave del coronavirus: 
+            la proteína de S. Una vez que estos planos están dentro del cuerpo, comienzan a producir la proteína S, que el sistema inmunológico reconoce como una amenaza y ataca. 
+            Todo esto, sin el más mínimo riesgo de desarrollar la enfermedad.</p>
+            <h4>Las pruebas</h4>
+            <p> La vacuna se ha desarrollado en unos 10 meses, un proceso que normalmente lleva 10 años. 
+                Y ya hay 2 resultados del ensayo de más de 20.000 voluntarios en el Reino Unido y Brasil.
+                En general, hubo 30 casos de COVID 19 entre las personas que recibieron dos dosis de la vacuna y 101 casos en personas que recibieron un placebo. 
+                Los investigadores dijeron que funcionó con una protección del 70%. 
+                Ningún voluntario desarrolló la enfermedad de manera grave o necesitó tratamiento hospitalario.
+                Sin embargo, la protección fue del 90% en un análisis de alrededor de 3.000 personas en el ensayo que recibieron una primera dosis de tamaño medio y una segunda dosis de tamaño completo. 
+                El análisis también sugirió que hubo una reducción en la cantidad de personas infectadas sin desarrollar síntomas, que todavía se cree pueden transmitir el virus.
+                De momento no se sabe por qué funcionó mejor una dosis baja. Una idea es que el sistema inmunológico rechaza la vacuna, si se administra en una dosis inicial demasiado grande. 
+                También puede ser que una dosis baja puede ser una mejor imitación de una infección por coronavirus y conducir a una mejor respuesta inmune.</p>
+            <h4>Noticias positivas</h4>
+                <p> A pesar que Pfizer y Moderna produjeron vacunas que brindan una protección del 95%, una cifra del 70% sigue siendo muy eficaz. 
+                    Esta sigue siendo una vacuna que puede salvar vidas de COVID 19 y es más eficaz que una vacuna contra la gripe estacional.
+                    Además, también tiene ventajas cruciales que la hacen más fácil de usar. Las vacunas de Oxford se pueden almacenar a la temperatura del refrigerador, lo que significa que se puede distribuir a cualquier parte del mundo.
+                    Las vacunas de Pfizer y Moderna, por el contrario, deben almacenarse a temperaturas mucho más frías.
+                    Finalmente, la vacuna Oxford tiene un costo mucho más bajo: aproximadamente 4 dólares. 
+                    En comparación, Pfizer cuesta cerca de 20 dólares, mientras que Moderna tiene un costo de 34 dólares. 
+                    Esto se debe a que la tecnología de Oxford está más establecida y porque se ha comprometido a ser “sin fines de lucro”. </p> 
+        </div>
+        </p>
+
+        </ul> 
+    </p>
+    <h2>Posicionamiento</h2>
+    <p>En CSS también se puede determinar la posición de elementos como imágenes o el mismo texto. 
+        Para ello se utiliza el atributo position dentro de &lt; style &gt;. Se pueden determinar tres casos:
+    <ul><li>Relative</li>
+        <p>Se especifica su posición con las propiedades top, bottom, left y rigth.</p>
+        <li>Absolute</li>
+        <p>El elemento se posiciona con respecto al elemento anterior</p>
+        <li>Fixed</li>
+        <p>El elemento se posiciona con respecto a la pantalla en la que se muestre la página  </p>
+
+    </ul>
+    </p>
+     <h3 id="titulo">La inteligencia artificial ahora puede decirnos cuándo deja de ser confiable</h3>
+     <img src="images/ia.png" id="ia">
+     <img src="images/rob_log.png" id="rob">
+    <div class="flotar"><h2>Float</h2>
+    <p>Este atributo se utiliza para posicionar los elementos unos al lado de otros permitiendo ajustar su disposición en la pantalla.
+       Otro atributo que se utiliza conjunto a este es clear, sirve para que ningún elemento se posicione delante o al lado de él. 
+    </p>
+       <p>
+        <h3>La sonda Chang’e 5 de China despega de la Luna con muestras recolectadas</h3>
+        <img src="images/ascenso.jpg" id="ascenso">
+        <p class="sonda"> Alunizó y ya despegó. China acaba de lanzar una pequeña nave espacial desde la superficie de la Luna en el siguiente paso su ambiciosa misión Chang’e 5 para traer muestras lunares a la Tierra.
+            La pequeña sonda, que se encontraba en la parte superior del módulo de aterrizaje Chang’e 5, despegó de Oceanus Procellarum a las 15:10 GMT / 23: 10 hora de Beijing) llevando consigo las primeras muestras lunares frescas desde 1976.
+            La siguiente etapa es un encuentro y un acoplamiento extremadamente desafiantes entre el pequeño vehículo de ascenso y el orbitador Chang’e 5. 
+            Este proceso será autónoma debido al retraso en la comunicación producido por la distancia entre la Tierra y la Luna.
+            Las dos naves espaciales comenzarán un acercamiento final en algún momento del sábado (5 de noviembre) y completarán el acoplamiento 3.5 horas después. 
+            Si todo va bien, China se preparará para el tramo final del viaje para entregar las primeras muestras lunares a la Tierra en 44 años.
+            Sin embargo, las muestras lunares no llegarán a casa de inmediato. La nave espacial Chang’e 5 tendrá que esperar en órbita lunar durante varios días hasta que haya una ventana estrecha en la que encender sus motores y dirigirse a la Tierra.
+            El viaje de regreso a la Tierra durará 112 horas, poco más de cuatro días y medio, antes del intento de reentrada. 
+            La búsqueda de Chang’e 5 para recolectar muestras lunares y traerlas a casa comenzó el 23 de noviembre con el lanzamiento de un cohete Long March 5 desde el sur de China. 
+            La nave entró en órbita alrededor de la luna cuatro días y medio después.
+            <div class="caracter"><table>
+            <tbody>
+               <tr>
+                 <td>Estado</td>
+                 <td>En desarrollo</td>
+               </tr>
+               <tr>
+                   <td>Aplicación</td>
+                   <td>Retorno muestras lunares</td>
+                 </tr>
+                 <tr>
+                    <td>Organismo responsable</td>
+                    <td>Administración espacial china</td>
+                  </tr>
+            </tbody>
+             </table></div>
+           
+            
+       <h4 id="pie">Información obtenida de la página web Robotitus</h4>
+    </p></div>
+</body> </div>
+
+</html>
